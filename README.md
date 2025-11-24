@@ -50,7 +50,7 @@ The following three screenshots prove the integrated real-time functionality of 
 * **Action:** Send a `POST` request to upload a file (e.g., `testing`).
 * **Proof:** Displaying the successful request, the file path, and the **Status: 201 Created** response.
 
-![Successful POST Upload](assets/post_upload_success.png)
+![Successful POST Upload](file-manager/assets/post_upload_success.png)
 
 ***
 
@@ -59,7 +59,7 @@ The following three screenshots prove the integrated real-time functionality of 
 * **Action:** Observe the connected WebSocket client after the successful upload.
 * **Proof:** Displaying the connected client receiving the `{"event": "file_uploaded", "filename": "testing", ...}` JSON message.
 
-![WebSocket Event Broadcast](assets/websocket_event_received.png)
+![WebSocket Event Broadcast](file-manager/assets/websocket_event_received.png)
 
 ***
 
@@ -68,4 +68,4 @@ The following three screenshots prove the integrated real-time functionality of 
 * **Action:** Send a `GET` request using the file ID to retrieve its metadata (Name, Size, Upload Date).
 * **Proof:** Displaying the `GET` request to the `/api/files/testing` endpoint and the `200 OK` response containing the file's metadata object.
 
-![Successful GET Metadata](assets/get_metadata_success.png)
+![Successful GET Metadata](file-manager/assets/get_metadata_success.png)
